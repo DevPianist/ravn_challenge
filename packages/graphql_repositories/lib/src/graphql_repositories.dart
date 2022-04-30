@@ -1,1 +1,1 @@
-
+export 'character/character.dart';
