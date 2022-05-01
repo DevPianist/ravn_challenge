@@ -6,8 +6,6 @@ import 'package:graphql_repositories/graphql_repositories.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:test/test.dart';
 
-part 'constants.dart';
-
 class _MockGqlClient extends Mock implements GraphQLClient {}
 
 class _MockQueryOptions extends Mock implements QueryOptions {}
@@ -27,7 +25,7 @@ void main() {
 
     when(() => client.query(any())).thenAnswer(
       (_) async => QueryResult(
-        data: json.decode(_characterListResponse) as Map<String, dynamic>,
+        data: json.decode(characterListResponse) as Map<String, dynamic>,
         source: QueryResultSource.network,
         options: SubscriptionOptions(document: gql('')),
       ),
@@ -75,7 +73,7 @@ void main() {
 
     when(() => client.query(any())).thenAnswer(
       (_) async => QueryResult(
-        data: json.decode(_characterDetailResponse) as Map<String, dynamic>,
+        data: json.decode(characterDetailResponse) as Map<String, dynamic>,
         source: QueryResultSource.network,
         options: SubscriptionOptions(document: gql('')),
       ),
