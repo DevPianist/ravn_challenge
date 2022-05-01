@@ -8,11 +8,17 @@ environment:
 
 dependencies:
   bloc: ^8.0.3
+  domain:
+    path: ./packages/domain
+  equatable: ^2.0.3
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
+  graphql: ^5.1.1
+  graphql_repositories:
+    path: ./packages/graphql_repositories
   intl: ^0.17.0
 
 dev_dependencies:
