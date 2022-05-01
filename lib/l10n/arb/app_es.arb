@@ -1,7 +1,31 @@
 {
     "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
+    "charactersAppBarTitle": "Personajes de Star Wars",
+    "@charactersAppBarTitle": {
+      "description": "Texto mostrado en la AppBar de la página de personajes"
+    },
+    "loading": "Cargando",
+    "@loading": {
+      "description": "Texto mostrado mientras se carga la página"
+    },
+    "failedLoadData": "Error al Cargar los Datos",
+    "@failedLoadData": {
+      "description": "Texto mostrado cuando falla la carga de los datos"
+    },
+    "generalInformation": "Información General",
+    "@generalInformation": {
+      "description": "Texto mostrado en la sección de información general"
+    },
+    "eyeColor": "Color de Ojos",
+    "hairColor": "Color de Cabello",
+    "skinColor": "Color de Piel",
+    "birthYear": "Año de Nacimiento",
+    "vehicles": "Vehículos",
+    "@vehicles": {
+      "description": "Texto mostrado en la sección de vehículos"
+    },
+    "noVehicles": "Sin Vehículos",
+    "@noVehicles": {
+      "description": "Texto mostrado cuando no hay vehículos"
     }
-}
+  }
