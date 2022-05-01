@@ -1,7 +1,31 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    "charactersAppBarTitle": "People of Star Wars",
+    "@charactersAppBarTitle": {
+      "description": "Text shown in the AppBar of the Characters Page"
+    },
+    "loading": "Loading",
+    "@loading": {
+      "description": "Text shown when the data is loading"
+    },
+    "failedLoadData": "Failed to Load Data",
+    "@failedLoadData": {
+      "description": "Text shown when the data failed to load"
+    },
+    "generalInformation": "General Information",
+    "@generalInformation": {
+      "description": "Text shown in the General Information section"
+    },
+    "eyeColor": "Eye Color",
+    "hairColor": "Hair Color",
+    "skinColor": "Skin Color",
+    "birthYear": "Birth Year",
+    "vehicles": "Vehicles",
+    "@vehicles": {
+      "description": "Text shown in the Vehicles section"
+    },
+    "noVehicles": "No vehicles",
+    "@noVehicles": {
+      "description": "Text shown when there are no vehicles"
     }
-}
+  }
