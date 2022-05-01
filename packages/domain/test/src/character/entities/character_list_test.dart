@@ -21,4 +21,11 @@ void main() {
           'hasNextPage: true, afterCode: xyz)',
     );
   });
+  test('character_list => props', () {
+    expect(_list.props, [
+      _list.characters,
+      _list.hasNextPage,
+      _list.afterCode,
+    ]);
+  });
 }

@@ -12,4 +12,10 @@ void main() {
       'Vehicle(id: 1, name: Snowspeeder)',
     );
   });
+  test('vehicle => props', () {
+    expect(_vehicle.props, [
+      '1',
+      'Snowspeeder',
+    ]);
+  });
 }

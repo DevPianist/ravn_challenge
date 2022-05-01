@@ -1,11 +1,12 @@
-import 'package:domain/src/character/character.dart';
+import 'package:domain/src/character/entities/character.dart';
+import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
 /// {@template domain.character_list}
 /// CharacterList domain entity.
 /// {@endtemplate}
 @immutable
-class CharacterList {
+class CharacterList extends Equatable {
   /// {@macro domain.character_list}
   const CharacterList({
     required this.characters,
@@ -25,4 +26,7 @@ class CharacterList {
   @override
   String toString() => 'CharacterList(characters: $characters, '
       'hasNextPage: $hasNextPage, afterCode: $afterCode)';
+
+  @override
+  List<Object> get props => [characters, hasNextPage, afterCode];
 }

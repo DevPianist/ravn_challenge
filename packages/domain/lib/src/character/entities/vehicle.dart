@@ -1,10 +1,11 @@
+import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
 /// {@template domain.vehicle}
 /// Vehicle domain entity.
 /// {@endtemplate}
 @immutable
-class Vehicle {
+class Vehicle extends Equatable {
   /// {@macro domain.vehicle}
   const Vehicle({
     required this.id,
@@ -19,4 +20,7 @@ class Vehicle {
 
   @override
   String toString() => 'Vehicle(id: $id, name: $name)';
+
+  @override
+  List<Object?> get props => [id, name];
 }

@@ -21,7 +21,14 @@ void main() {
           'homeworld: Tatooine)',
     );
   });
-
+  test('character => props', () {
+    expect(_character.props, [
+      '1',
+      'test',
+      'Droid',
+      'Tatooine',
+    ]);
+  });
   group(
     'character => description',
     () {
