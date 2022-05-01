@@ -18,6 +18,21 @@ This project contains 3 flavors:
 - staging
 - production
 
+First set your environment variables:
+
+```sh
+$ cd lib/env/
+
+# Development
+$ bash env_generator.sh > env_development.dart
+
+# Staging
+$ bash env_generator.sh > env_staging.dart
+
+# Production
+$ bash env_generator.sh > env_production.dart
+```
+
 To run the desired flavor either use the launch configuration in VSCode/Android Studio or use the following commands:
 
 ```sh
@@ -31,9 +46,13 @@ $ flutter run --flavor staging --target lib/main_staging.dart
 $ flutter run --flavor production --target lib/main_production.dart
 ```
 
-_\*Ravn Challenge works on iOS, Android, Web, and Windows._
+_\*Ravn Challenge works on iOS, Android and Web._
 
 ---
+## Custom Packages
+
+- [domain][domain_link]: Domain layer
+- [graphql_repositories][graphql_repositories_link] Implements the GraphQl repositories.
 
 ## Running Tests 🧪
 
@@ -162,3 +181,6 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [very_good_cli_link]: https://github.com/VeryGoodOpenSource/very_good_cli
+[domain_link]: packages/domain
+[graphql_repositories_link]: packages/graphql_repositories
+
