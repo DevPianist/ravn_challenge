@@ -1,11 +1,12 @@
-import 'package:domain/src/character/character.dart';
+import 'package:domain/src/character/entities/entities.dart';
+import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
 /// {@template domain.character_detail}
 /// CharacterDetail domain entity.
 /// {@endtemplate}
 @immutable
-class CharacterDetail {
+class CharacterDetail extends Equatable {
   /// {@macro domain.character_detail}
   const CharacterDetail({
     required this.id,
@@ -42,4 +43,8 @@ class CharacterDetail {
   String toString() => 'CharacterDetail(id: $id, name: $name, '
       'eyeColor: $eyeColor, hairColor: $hairColor, '
       'vehicles: $vehicles, skinColor: $skinColor, birthYear: $birthYear)';
+
+  @override
+  List<Object?> get props =>
+      [id, name, eyeColor, hairColor, vehicles, skinColor, birthYear];
 }

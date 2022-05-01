@@ -28,4 +28,15 @@ void main() {
           'vehicles: ${_detail.vehicles}, skinColor: Fair, birthYear: 19BBY)',
     );
   });
+  test('character_detail => props', () {
+    expect(_detail.props, [
+      '1',
+      'test',
+      'Blue',
+      'Blond',
+      _detail.vehicles,
+      'Fair',
+      '19BBY',
+    ]);
+  });
 }

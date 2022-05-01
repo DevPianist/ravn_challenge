@@ -1,10 +1,11 @@
+import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
 /// {@template domain.character}
 /// Character domain entity.
 /// {@endtemplate}
 @immutable
-class Character {
+class Character extends Equatable {
   /// {@macro domain.character}
   const Character({
     required this.id,
@@ -31,4 +32,7 @@ class Character {
   @override
   String toString() => 'Character(id: $id, name: $name, species: $species, '
       'homeworld: $homeworld)';
+
+  @override
+  List<Object?> get props => [id, name, species, homeworld];
 }
